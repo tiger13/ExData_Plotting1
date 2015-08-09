@@ -1,7 +1,8 @@
 ## This script plots the three submetering measurements over two days. This
 ## script assumes that it is in the same directory as the data set.
 
-powerData <- read.table("C:\\Users\\Ron\\Documents\\DataScience\\datasets\\ExploratoryDataAnalysis\\exdata-data-household_power_consumption\\household_power_consumption.txt", header=TRUE, sep = ";")
+##powerData <- read.table("C:\\Users\\Ron\\Documents\\DataScience\\datasets\\ExploratoryDataAnalysis\\exdata-data-household_power_consumption\\household_power_consumption.txt", header=TRUE, sep = ";")
+powerData <- read.table("household_power_consumption.txt", header=TRUE, sep = ";")
 
 ## Restrict the data to the days of interest.
 allDates <- as.Date(powerData[,1], "%d/%m/%Y")
